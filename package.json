@@ -1,7 +1,7 @@
 {
   "name": "gomoonpos",
   "productName": "GoMoonPOS",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "LunaHdz96",
   "description": "Punto de venta de escritorio: ventas, inventario, fiados, préstamos y reportes",
   "main": "electron/main.cjs",
@@ -16,10 +16,14 @@
   "build": {
     "appId": "com.gomoon.pos",
     "productName": "GoMoonPOS",
+    "icon": "build/icon.ico",
     "files": [
       "dist/**",
       "electron/**",
       "package.json"
+    ],
+    "extraResources": [
+      { "from": "build/icon.ico", "to": "icon.ico" }
     ],
     "win": {
       "target": "nsis",

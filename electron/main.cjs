@@ -7,6 +7,9 @@ const { createService } = require('./service.cjs');
 let service;
 let mainWindow;
 let updateStatus = { state: 'idle' };
+const iconPath = app.isPackaged
+  ? path.join(process.resourcesPath, 'icon.ico')
+  : path.join(__dirname, '..', 'build', 'icon.ico');
 
 function publishUpdateStatus(status) {
   updateStatus = status;
@@ -33,6 +36,7 @@ async function createWindow() {
     width: 1280,
     height: 800,
     title: 'GoMoonPOS',
+    icon: iconPath,
     autoHideMenuBar: true,
     webPreferences: {
       preload: path.join(__dirname, 'preload.cjs'),

@@ -22,6 +22,7 @@ button.btn.danger { background: #dc2626; }
 .bad { color: #dc2626; font-weight: 600; }
 .total { font-size: 28px; font-weight: 700; }
 .login { max-width: 320px; margin: 15vh auto; }
+.login-logo { display: block; width: 100%; max-height: 180px; margin: 0 auto 16px; object-fit: contain; }
 .login input { width: 100%; box-sizing: border-box; margin-bottom: 8px; }
 .bar { background: #4f46e5; height: 14px; border-radius: 3px; }
 .update { position: fixed; right: 16px; bottom: 16px; padding: 12px; border-radius: 8px; background: #e0e7ff; box-shadow: 0 2px 8px #0003; }

@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { api, Role, UpdateStatus, updateApi, User } from './api';
+import logo from './assets/gomoonpos-logo.jpg';
 import Sales from './pages/Sales';
 import Inventory from './pages/Inventory';
 import Customers from './pages/Customers';
@@ -29,6 +30,7 @@ function Login({ onLogin }: { onLogin: (u: User) => void }) {
   };
   return (
     <form className="card login" onSubmit={submit}>
+      <img className="login-logo" src={logo} alt="Logotipo de GoMoonPOS" />
       <h2>GoMoonPOS</h2>
       <input placeholder="Usuario" value={username} onChange={(e) => setU(e.target.value)} autoFocus />
       <input placeholder="Contraseña" type="password" value={password} onChange={(e) => setP(e.target.value)} />
