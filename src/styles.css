@@ -1,0 +1,28 @@
+:root { font-family: Segoe UI, sans-serif; color: #1f2937; }
+body { margin: 0; background: #f3f4f6; }
+.app { display: flex; flex-direction: column; height: 100vh; }
+nav { display: flex; gap: 4px; background: #111827; padding: 8px; align-items: center; }
+nav button { background: none; color: #d1d5db; border: 0; padding: 8px 14px; border-radius: 6px; cursor: pointer; }
+nav button.active { background: #4f46e5; color: #fff; }
+nav .brand { color: #fff; font-weight: 700; margin-right: 16px; }
+nav .spacer { flex: 1; }
+main { flex: 1; overflow: auto; padding: 16px; }
+.card { background: #fff; border-radius: 8px; padding: 16px; margin-bottom: 16px; box-shadow: 0 1px 2px #0002; }
+.row { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; margin-bottom: 8px; }
+.grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+table { width: 100%; border-collapse: collapse; }
+th, td { text-align: left; padding: 6px 8px; border-bottom: 1px solid #e5e7eb; }
+input, select { padding: 6px 8px; border: 1px solid #d1d5db; border-radius: 6px; }
+button.btn { background: #4f46e5; color: #fff; border: 0; padding: 7px 14px; border-radius: 6px; cursor: pointer; }
+button.btn.alt { background: #6b7280; }
+button.btn.danger { background: #dc2626; }
+.err { color: #dc2626; margin: 8px 0; }
+.ok { color: #059669; margin: 8px 0; }
+.warn { color: #b45309; font-weight: 600; }
+.bad { color: #dc2626; font-weight: 600; }
+.total { font-size: 28px; font-weight: 700; }
+.login { max-width: 320px; margin: 15vh auto; }
+.login input { width: 100%; box-sizing: border-box; margin-bottom: 8px; }
+.bar { background: #4f46e5; height: 14px; border-radius: 3px; }
+.update { position: fixed; right: 16px; bottom: 16px; padding: 12px; border-radius: 8px; background: #e0e7ff; box-shadow: 0 2px 8px #0003; }
+.update.error { background: #fee2e2; color: #991b1b; }
